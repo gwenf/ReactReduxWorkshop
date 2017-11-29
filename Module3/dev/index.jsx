@@ -1,21 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import Main from './components/Main.jsx';
 
-require("./site.scss");
+require('./site.scss');
 
-const getUserInfo = (firstName, lastName) =>
-    ({
-        firstName: "Dave",
-        lastName: "Fancher"
-    });
+ReactDOM.render(<Main />, document.getElementById('container'));
 
-function HelloWorld (props) {
-    return (
-        <div>Hello {props.user.firstName} {props.user.lastName}!</div>
-    )
-}
-
-ReactDOM.render(
-    <HelloWorld user={getUserInfo()} />,
-    document.querySelector("#container")
-);

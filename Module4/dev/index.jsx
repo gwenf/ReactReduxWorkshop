@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import LoginForm from "./components/app/loginForm.jsx";
+import Main from './components/Main.jsx';
 
-require("./site.scss");
+require('./site.scss');
 
-ReactDOM.render(
-    <LoginForm />,
-    document.querySelector("#container")
-);
+ReactDOM.render(<Main />, document.getElementById('container'));
+

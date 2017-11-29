@@ -44,3 +44,14 @@ ul.navMenu {
         }
     }
 }
+
+.character-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .character-card {
+        padding: 10px;
+        border: 1px solid #898989;
+    }
+}
