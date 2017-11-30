@@ -1,11 +1,16 @@
 import React from 'react';
 
-const CharacterCard = (props) => {
+const CharacterCard = ({ character }) => {
   return (
     <div className="character-card">
-      <h3>Character Name</h3>
-      <p>This is some other info about me.</p>
-      <p>And some more...</p>
+      <h3>{character.aliases[0]}</h3>
+      <p>
+        {
+          character.culture.length > 0 ?
+            'Culture: ' + character.culture :
+            ''
+        }
+      </p>
     </div>
   );
 };

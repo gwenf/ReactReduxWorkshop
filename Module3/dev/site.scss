@@ -20,27 +20,17 @@ body {
     margin-top: 20px;
 }
 
-ul.navMenu {
-    margin-top: 25px;
-
-    li {
-        
+.navbar.navbar-light {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    h1 {
+        margin: 0;
+    }
+    .navbar-nav {
+        flex-direction: row;
         a {
-            color: #898989;
-            text-transform: uppercase;
-            text-decoration: none;
-            padding: 10px;
-            color: $highlightColor;
-            border: 1px solid #898989;
-            border-bottom: 0;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
-
-        .active {
-            border-top: 3px solid $highlightColor;
-            color: #898989;
-            background-color: #F0F0F0;
+            margin-left: 10px;
         }
     }
 }
@@ -53,5 +43,8 @@ ul.navMenu {
     .character-card {
         padding: 10px;
         border: 1px solid #898989;
+        margin: 10px 0;
+        min-width: 300px;
+        min-height: 100px;
     }
 }

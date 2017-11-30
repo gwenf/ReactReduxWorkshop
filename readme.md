@@ -1,5 +1,8 @@
 # React/Redux Workshop Outline
 
+This is a simplified version of another, longer workshop you can find here:
+[https://github.com/davefancher/ReactReduxWorkshop](https://github.com/davefancher/ReactReduxWorkshop)
+
 ## Welcome!
 
 * Housekeeping

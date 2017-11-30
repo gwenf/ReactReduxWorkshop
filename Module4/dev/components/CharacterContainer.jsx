@@ -5,10 +5,11 @@ class CharacterContainer extends Component {
   render () {
     return (
       <div className="character-container">
-        <CharacterCard />
-        <CharacterCard />
-        <CharacterCard />
-        <CharacterCard />
+        {
+          this.props.characters.map((character, i) => {
+            return <CharacterCard key={i} character={character} />
+          })
+        }
       </div>
     );
   };
